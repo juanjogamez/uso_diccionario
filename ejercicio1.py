@@ -1,7 +1,5 @@
 import diccionario as di
 
-#try-step
-
 def replace_with_dictionary(texto):
     dic=di.dictionary()
     for element in dic:
@@ -9,6 +7,7 @@ def replace_with_dictionary(texto):
     return texto
 
 def main():
+    #Try-Except
     try:
         #marca de contexto#
         with open('texto.txt', 'r') as file:
@@ -19,7 +18,7 @@ def main():
     except Exception as e:
         print(e)
     else:
-        print("Lectura exitosa")
+        print("Lectura exitosa!!")
         texto=replace_with_dictionary(texto)
         print(texto)
 
